@@ -111,9 +111,6 @@ def home(): return "Bot P.1🦁 activo"
 Thread(target=lambda: app.run(host='0.0.0.0', port=10000), daemon=True).start()
 
 # Loop principal
-# PRUEBA MANUAL DEL MENSAJE DE BUENOS DÍAS
-enviar_mensaje_buenos_dias()
-
 while True:
     schedule.run_pending()
     revisar_nuevos_miembros()
